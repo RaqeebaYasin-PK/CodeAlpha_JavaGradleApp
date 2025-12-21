@@ -1,0 +1,62 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.codealpha'
+version = '1.0.0'
+
+// Reproducible builds: use a Java toolchain (ensures consistent JDK across machines)
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    // Single explicit entry point for the application
+    mainClass = 'com.example.sms.main.Main'
+}
+
+// Use a central artifact repository
+repositories {
+    mavenCentral()
+}
+
+// DevOps: keep compilation deterministic and encoded as UTF-8
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// Runtime artifact: add Main-Class to manifest for `java -jar`
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.example.sms.main.Main'
+        )
+    }
+}
+
+// Test dependencies and configuration
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+// Optional: produce source JAR if needed by downstream publishing
+task sourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from sourceSets.main.get().allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+// Short notes for maintainers: DevOps principles applied here
+// - Reproducibility: Java toolchain ensures JDK 17 across environments
+// - Automation: ci workflow builds, tests, and uploads artifacts
+// - Consistency: UTF-8 encoding and explicit main class in manifest
