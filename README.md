@@ -1,141 +1,148 @@
 CodeAlpha Java Gradle Application
-Overview
 
-CodeAlpha_JavaGradleApp is a Java application built and automated using Gradle. This project demonstrates core DevOps principles such as automated builds, efficient dependency management, and continuous integration/continuous delivery (CI/CD).
-It is developed to satisfy the internship requirement for TASK 3: Java Application using Gradle, which includes automated builds, dependency management, CI/CD integration, streamlined build and deployment processes, and DevOps understanding.
+📌 Project Overview
 
-Features
+CodeAlpha Java Gradle Application is a Java-based project developed using Gradle as the build automation tool.
+The purpose of this project is to demonstrate core DevOps concepts in Java development, including automated builds, structured dependency management, and continuous integration/continuous delivery (CI/CD).
 
-This project implements the following:
+This repository fulfills Internship TASK 3: Java Application using Gradle by implementing industry-standard build and delivery practices.
 
-Automated Build Management with Gradle
-The project uses Gradle as the primary build automation tool, ensuring clean build lifecycles, reproducible outputs, and consistent project build logic.
+🎯 Internship Task Objectives Covered
 
-Efficient Dependency Management
-Dependencies are declared in build.gradle using appropriate scopes (implementation, testImplementation) for modular and maintainable builds.
+This project successfully addresses the following internship requirements:
+Automate Java project builds using Gradle
+Manage dependencies efficiently using Gradle configurations
+Integrate CI/CD pipelines for continuous delivery
+Streamline build and deployment workflows
+Apply and demonstrate DevOps principles in Java development
 
-CI/CD Integration
-This repository includes a CI/CD pipeline configured (e.g., GitHub Actions or another CI provider) to automatically build, test, and deploy the application on every commit to the main branch.
 
-Streamlined Build & Deployment
-Gradle tasks and the CI/CD workflow automate build, test, and package processes to ensure reliable and efficient delivery.
+✨ Key Features
 
-DevOps Principles Applied
-The project reflects automation, version control best practices, infrastructure as code (Gradle build logic), and continuous delivery principles. 
-Mshemeel
-+1
+1. Gradle Build Automation
 
-Table of Contents
+Uses Gradle Wrapper for consistent builds across environments
+Automated tasks for cleaning, compiling, testing, and packaging
+Reproducible and reliable build lifecycle
 
-Prerequisites
+2. Dependency Management
 
-Getting Started
+Dependencies declared in build.gradle
+Proper usage of scopes such as:
+implementation
+testImplementation
+Centralized and maintainable dependency configuration
 
-Usage Instructions
+3. CI/CD Integration
 
-CI/CD Pipeline
+CI/CD pipeline configured (e.g., GitHub Actions)
 
-Project Structure
+Automatically triggered on:
+Code push
+Pull requests
+Executes build and test stages
+Generates build artifacts
 
-Learnings & Principles
+4. Streamlined Build & Delivery
 
-Contribution & Licensing
+Single-command build using Gradle
+Automated validation through CI/CD
+Reduced manual intervention in build and deployment
 
-Prerequisites
+5. DevOps Principles Applied
 
-Before running the project locally:
+Automation over manual processes
+Version-controlled build configuration
+Continuous integration and delivery
+Consistent environments using Gradle Wrapper
 
-Java JDK 11+ installed
 
-Git installed
+🛠 Prerequisites
 
-Gradle Wrapper (./gradlew) is included, so no global Gradle installation is required
+Ensure the following are installed before running the project locally:
+Java JDK 11 or higher
+Git
+No separate Gradle installation required (Gradle Wrapper included)
 
-Getting Started
+
+🚀 Getting Started
 
 Clone the repository:
 
 git clone https://github.com/RaqeebaYasin-PK/CodeAlpha_JavaGradleApp.git
 cd CodeAlpha_JavaGradleApp
 
-Usage Instructions
+
+▶️ Usage Instructions
 Build the Project
-
-Run:
-
 ./gradlew clean build
 
 
-This command:
+This command will:
 
-Cleans previous builds
-
-Compiles source code
-
-Runs tests
-
-Packages the application
-
+Clean previous builds
+Compile the source code
+Execute tests
+Generate a JAR file
 Run the Application
-
-After successful build:
-
-java -jar build/libs/<your-artifact-name>.jar
+After a successful build:
+java -jar build/libs/<artifact-name>.jar
 
 
-Replace <your-artifact-name>.jar with the actual JAR file name produced by the build.
+Replace <artifact-name>.jar with the actual generated JAR file name.
 
-CI/CD Pipeline
 
-A continuous integration and delivery (CI/CD) workflow is included (e.g., in .github/workflows for GitHub Actions) that:
+🔁 CI/CD Pipeline
 
-Triggers automatically on code push and pull requests
+The project includes a CI/CD workflow (located in .github/workflows/) that:
 
-Runs build and test steps
-
+Automatically triggers on code changes
+Builds the project using Gradle
+Runs automated tests
 Produces build artifacts
+Ensures code quality before merge
+This pipeline demonstrates real-world DevOps automation practices used in professional environments.
 
-Optionally deploys to a staging or delivery environment
 
-The workflow ensures every change is tested and validated before merge, demonstrating industry-standard automation practices. 
-Mshemeel
+📁 Project Structure
+CodeAlpha_JavaGradleApp
 
-Project Structure
+├── .github/workflows/        # CI/CD pipeline configuration
 
-├── .github/workflows/           # CI/CD workflow definitions
+├── gradle/                  # Gradle wrapper files
 
-├── build.gradle                 # Gradle build configuration
+├── src/main/java/            # Application source code
 
-├── gradle/                      # Gradle wrapper configuration
+├── src/test/java/            # Test cases
 
-├── src/main/java/               # Source code
+├── build.gradle              # Gradle build configuration
 
-├── src/test/java/               # Unit tests
+├── settings.gradle           # Project settings
 
-├── build/                       # Generated build artifacts
+├── build/                    # Generated artifacts
 
-├── README.md                   # This file
+└── README.md                 # Project documentation
 
-Learnings & Principles
 
-This project reflects key DevOps and Java development concepts:
+📘 Learnings & Outcomes
 
-Build Automation
+Through this project, the following concepts were applied and practiced:
 
-Gradle ensures reproducible and automated builds across environments. 
-Mshemeel
+Gradle build automation
+Dependency lifecycle management
+CI/CD pipeline integration
+DevOps workflow implementation
+Professional Java project structuring
 
-Dependency Management
 
-Dependencies are declared in a centralized, maintainable way.
+📄 Contribution & License
 
-Continuous Delivery
+This repository is part of an internship assignment and is not intended for external contributions.
+For verification or evaluation purposes, please contact the project author.
 
-CI/CD pipeline automates build and testing, aligning with modern DevOps practices. 
-Mshemeel
 
-Contribution & Licensing
+👩‍💻 Author
 
-This repository is part of an internship assignment and is not open for external contributions.
-
-For any questions about the project or verification steps, contact the author.
+Raqeeba Yasin
+BS Computer Science
+Intern – DevOps
