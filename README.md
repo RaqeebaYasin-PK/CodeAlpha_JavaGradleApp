@@ -101,12 +101,19 @@ The workflow ensures every change is tested and validated before merge, demonstr
 Mshemeel
 
 Project Structure
+
 ├── .github/workflows/           # CI/CD workflow definitions
+
 ├── build.gradle                 # Gradle build configuration
+
 ├── gradle/                      # Gradle wrapper configuration
+
 ├── src/main/java/               # Source code
+
 ├── src/test/java/               # Unit tests
+
 ├── build/                       # Generated build artifacts
+
 ├── README.md                   # This file
 
 Learnings & Principles
