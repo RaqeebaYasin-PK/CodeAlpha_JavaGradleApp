@@ -1,7 +1,10 @@
 Project Name: CodeAlpha Java Gradle Application
+
 Internship Task: TASK 3 – Java Application using Gradle
 
+
 Objective:
+
 
 Automate Java project builds using Gradle
 Manage dependencies efficiently
@@ -9,7 +12,9 @@ Integrate CI/CD pipelines
 Streamline build and deployment processes
 Apply core DevOps principles in Java development
 
+
 Key Features:
+
 
 Gradle Build Automation
 Uses Gradle Wrapper for consistent builds
@@ -32,13 +37,17 @@ Version-controlled builds
 Continuous integration & delivery
 Consistent environments via Gradle Wrapper
 
+
 Prerequisites
+
 
 Java JDK 11 or higher
 Git installed
 Gradle Wrapper included (no separate Gradle install needed)
 
+
 Getting Started
+
 
 git clone https://github.com/RaqeebaYasin-PK/CodeAlpha_JavaGradleApp.git
 
@@ -47,14 +56,18 @@ cd CodeAlpha_JavaGradleApp
 java -jar build/libs/<your-jar-file>.jar
 
 
+
 CI/CD Pipeline
+
 
 Workflow in .github/workflows/
 Builds project automatically on code changes
 Runs tests and produces artifacts
 Ensures code quality before merge
 
+
 Notes
+
 
 All source code is in src/
 Compiled classes in out/
