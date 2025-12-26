@@ -1,148 +1,90 @@
-CodeAlpha Java Gradle Application
+Project Name: CodeAlpha Java Gradle Application
+Internship Task: TASK 3 – Java Application using Gradle
 
-📌 Project Overview
+Objective:
 
-CodeAlpha Java Gradle Application is a Java-based project developed using Gradle as the build automation tool.
-The purpose of this project is to demonstrate core DevOps concepts in Java development, including automated builds, structured dependency management, and continuous integration/continuous delivery (CI/CD).
-
-This repository fulfills Internship TASK 3: Java Application using Gradle by implementing industry-standard build and delivery practices.
-
-🎯 Internship Task Objectives Covered
-
-This project successfully addresses the following internship requirements:
 Automate Java project builds using Gradle
-Manage dependencies efficiently using Gradle configurations
-Integrate CI/CD pipelines for continuous delivery
-Streamline build and deployment workflows
-Apply and demonstrate DevOps principles in Java development
 
+Manage dependencies efficiently
 
-✨ Key Features
+Integrate CI/CD pipelines
 
-1. Gradle Build Automation
+Streamline build and deployment processes
 
-Uses Gradle Wrapper for consistent builds across environments
-Automated tasks for cleaning, compiling, testing, and packaging
-Reproducible and reliable build lifecycle
+Apply core DevOps principles in Java development
 
-2. Dependency Management
+Key Features:
+
+Gradle Build Automation
+
+Uses Gradle Wrapper for consistent builds
+
+Tasks for cleaning, compiling, testing, packaging
+
+Reproducible builds across environments
+
+Dependency Management
 
 Dependencies declared in build.gradle
-Proper usage of scopes such as:
-implementation
-testImplementation
-Centralized and maintainable dependency configuration
 
-3. CI/CD Integration
+Proper scopes (implementation, testImplementation)
 
-CI/CD pipeline configured (e.g., GitHub Actions)
+Centralized, maintainable dependency configuration
 
-Automatically triggered on:
-Code push
-Pull requests
-Executes build and test stages
-Generates build artifacts
+CI/CD Integration
 
-4. Streamlined Build & Delivery
+GitHub Actions workflow triggers on push or pull requests
 
-Single-command build using Gradle
+Automates build, test, and artifact generation
+
+Demonstrates real-world DevOps automation
+
+Streamlined Build & Delivery
+
+Single-command build: ./gradlew clean build
+
 Automated validation through CI/CD
-Reduced manual intervention in build and deployment
 
-5. DevOps Principles Applied
+Reduces manual intervention
 
-Automation over manual processes
-Version-controlled build configuration
-Continuous integration and delivery
-Consistent environments using Gradle Wrapper
+DevOps Principles
 
+Version-controlled builds
 
-🛠 Prerequisites
+Continuous integration & delivery
 
-Ensure the following are installed before running the project locally:
+Consistent environments via Gradle Wrapper
+
+Prerequisites
+
 Java JDK 11 or higher
-Git
-No separate Gradle installation required (Gradle Wrapper included)
 
+Git installed
 
-🚀 Getting Started
+Gradle Wrapper included (no separate Gradle install needed)
 
-Clone the repository:
+Getting Started
 
 git clone https://github.com/RaqeebaYasin-PK/CodeAlpha_JavaGradleApp.git
 cd CodeAlpha_JavaGradleApp
-
-
-▶️ Usage Instructions
-Build the Project
 ./gradlew clean build
+java -jar build/libs/<your-jar-file>.jar
 
 
-This command will:
+CI/CD Pipeline
 
-Clean previous builds
-Compile the source code
-Execute tests
-Generate a JAR file
-Run the Application
-After a successful build:
-java -jar build/libs/<artifact-name>.jar
+Workflow in .github/workflows/
 
+Builds project automatically on code changes
 
-Replace <artifact-name>.jar with the actual generated JAR file name.
+Runs tests and produces artifacts
 
-
-🔁 CI/CD Pipeline
-
-The project includes a CI/CD workflow (located in .github/workflows/) that:
-
-Automatically triggers on code changes
-Builds the project using Gradle
-Runs automated tests
-Produces build artifacts
 Ensures code quality before merge
-This pipeline demonstrates real-world DevOps automation practices used in professional environments.
 
+Notes
 
-📁 Project Structure
-CodeAlpha_JavaGradleApp
+All source code is in src/
 
-├── .github/workflows/        # CI/CD pipeline configuration
+Compiled classes in out/
 
-├── gradle/                  # Gradle wrapper files
-
-├── src/main/java/            # Application source code
-
-├── src/test/java/            # Test cases
-
-├── build.gradle              # Gradle build configuration
-
-├── settings.gradle           # Project settings
-
-├── build/                    # Generated artifacts
-
-└── README.md                 # Project documentation
-
-
-📘 Learnings & Outcomes
-
-Through this project, the following concepts were applied and practiced:
-
-Gradle build automation
-Dependency lifecycle management
-CI/CD pipeline integration
-DevOps workflow implementation
-Professional Java project structuring
-
-
-📄 Contribution & License
-
-This repository is part of an internship assignment and is not intended for external contributions.
-For verification or evaluation purposes, please contact the project author.
-
-
-👩‍💻 Author
-
-Raqeeba Yasin
-BS Computer Science
-Intern – DevOps
+Reports and build outputs in build/
